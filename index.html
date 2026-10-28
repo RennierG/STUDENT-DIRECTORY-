@@ -1,61 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Student Directory</title>
-
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
-
-    <header>
-        <h1>Student Directory</h1>
-        <p>Enter student information to add it to the directory.</p>
-    </header>
-
+    <section id ="headerContainer">
+        <h1>STUDENT DIRECTORY</h1>
+        <small>Show list of Students HAHAHAHA</small>
+    </section>
 
 
-        Student Form Section 
-        <section class="form-section">
+    <section id = "formContainer">
+        <form id="studentForm">
 
-            <h2>Add Student</h2>
-
-            <form id="studentForm">
-
-                <label for="studentName">Student Name</label>
-                <input type="text" id="studentName" required>
-
-                <label for="program">Program</label>
-                <input type="text" id="program" required>
-
-                <button type="submit">Add Student</button>
-
-            </form>
-
-        </section>
-
-
-        <section class="display-section">
-
-            <h2>Students</h2>
-
-            <div id="studentList" class="student-grid">
-                
+            <div class = "input-field">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">           
             </div>
 
-        </section>
+            <div class="input-field">
+                <label for="program">Program:</label>
+                <input type="text" name="program" id="program">
+            </div>
+
+            <div>
+                <button>ADD STUDENT</button>
+            </div>
+        </form>
+ 
+    </section>
 
 
-    <footer>
-        <p>Student Directory</p>
-    </footer>
+
+    <section id = "listContainer">
+       
+
+    </section>
 
     <script src="script.js"></script>
 
+    
 </body>
-
 </html>
